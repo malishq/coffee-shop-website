@@ -38,6 +38,38 @@ export function Reveal({ children, className }: { children: ReactNode; className
             scrollTrigger: { trigger: group, start: "top 85%", once: true },
           });
         });
+        gsap.utils.toArray<HTMLElement>("[data-reveal-rows]").forEach((group) => {
+          reveal(group.children, {
+            y: 14,
+            autoAlpha: 0,
+            duration: 0.6,
+            ease: "power2.out",
+            stagger: 0.05,
+            scrollTrigger: { trigger: group, start: "top 85%", once: true },
+          });
+        });
+        gsap.utils.toArray<HTMLElement>("[data-reveal-picture]").forEach((element) => {
+          reveal(element, {
+            scale: 1.06,
+            autoAlpha: 0,
+            duration: 1.2,
+            ease: "power2.out",
+            transformOrigin: "50% 60%",
+            scrollTrigger: { trigger: element, start: "top 88%", once: true },
+          });
+        });
+        gsap.utils.toArray<HTMLElement>("[data-parallax]").forEach((element) => {
+          const amount = Number(element.dataset.parallax ?? 6);
+          gsap.fromTo(
+            element,
+            { yPercent: -amount },
+            {
+              yPercent: amount,
+              ease: "none",
+              scrollTrigger: { trigger: element.parentElement ?? element, start: "top bottom", end: "bottom top", scrub: true },
+            },
+          );
+        });
       });
       return () => mm.revert();
     },

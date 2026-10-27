@@ -26,9 +26,19 @@ Next.js 16 (статический экспорт), React 19, Tailwind CSS 4, GS
 
 ![Главный экран](docs/screens/desktop-hero.png)
 
-![Вся страница, десктоп](docs/screens/desktop-full.png)
+![Меню с полным прайсом](docs/screens/desktop-menu.png)
 
-![Телефон](docs/screens/mobile-full.png)
+![Конструктор напитка](docs/screens/desktop-builder.png)
+
+![Лоты недели и полоса обжарки](docs/screens/desktop-beans.png)
+
+![Подписка на зерно](docs/screens/desktop-subscription.png)
+
+![Зал, ростер и каппинги](docs/screens/desktop-space.png)
+
+![Предзаказ с собой](docs/screens/desktop-order.png)
+
+![Телефон: главный экран](docs/screens/mobile-hero.png)
 
 ## Запуск
 

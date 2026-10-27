@@ -10,6 +10,7 @@ import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 import { useGSAP } from "@gsap/react";
 import { Bean, CupSteam } from "@/components/drawings";
 import { ButtonLink } from "@/components/ui";
+import { asset } from "@/lib/asset";
 import { SITE } from "@/lib/site";
 
 gsap.registerPlugin(ScrollTrigger, SplitText, DrawSVGPlugin, useGSAP);
@@ -74,7 +75,7 @@ export function Hero() {
       <div className="relative grid h-full grid-cols-12 gap-x-[var(--gutter)] pb-10 pt-4 lg:grid-rows-[minmax(4vh,1fr)_auto_auto_minmax(4vh,1fr)] lg:pb-0 lg:pt-0">
         <figure data-hero-photo className="col-span-6 col-start-7 row-start-1 mb-4 self-end lg:col-span-3 lg:col-start-10 lg:mb-6 lg:mt-[8vh]">
           <Image
-            src="/images/beans-dark.jpg"
+            src={asset("/images/beans-dark.jpg")}
             width={1920}
             height={1280}
             alt="Обжаренные зёрна кофе, рассыпанные на тёмной поверхности"

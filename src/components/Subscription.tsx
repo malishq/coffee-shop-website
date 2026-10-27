@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { OrderLink } from "@/components/OrderLink";
+import { asset } from "@/lib/asset";
 import { PLANS, TERMS } from "@/lib/menu";
 
 export function Subscription() {
@@ -12,7 +13,7 @@ export function Subscription() {
           </h2>
           <figure data-reveal-picture className="mt-8 w-[60%] lg:w-full">
             <Image
-              src="/images/beans-roasted.jpg"
+              src={asset("/images/beans-roasted.jpg")}
               width={1600}
               height={1200}
               alt="Обжаренные зёрна арабики крупным планом"

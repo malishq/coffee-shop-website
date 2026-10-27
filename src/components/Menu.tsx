@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { asset } from "@/lib/asset";
 import { MENU, formatPrice } from "@/lib/menu";
 
 export function Menu() {
@@ -15,7 +16,7 @@ export function Menu() {
           className="col-span-7 col-start-6 row-start-2 mt-14 self-end lg:col-span-4 lg:col-start-1 lg:row-start-1 lg:mt-0 lg:w-[22vw] lg:max-w-full"
         >
           <Image
-            src="/images/latte-pour.jpg"
+            src={asset("/images/latte-pour.jpg")}
             width={1920}
             height={1277}
             alt="Молоко вливают в чашку эспрессо, на пенке получается рисунок"

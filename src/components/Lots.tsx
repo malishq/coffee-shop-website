@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { RoastProfile } from "@/components/drawings";
+import { asset } from "@/lib/asset";
 import { LOTS, formatPrice } from "@/lib/menu";
 import { SITE } from "@/lib/site";
 
@@ -20,7 +21,7 @@ export function Lots() {
         </div>
         <figure data-reveal-picture className="col-span-8 col-start-5 mt-10 lg:col-span-4 lg:col-start-9 lg:mt-0">
           <Image
-            src="/images/cherries-tarrazu.jpg"
+            src={asset("/images/cherries-tarrazu.jpg")}
             width={1600}
             height={1200}
             alt="Ягоды кофе и пергаментное зерно сушатся на солнце на столах"
@@ -60,7 +61,7 @@ export function Lots() {
       <figure className="relative -mx-[var(--margin)] mt-16 h-[100svh] min-h-[520px] overflow-hidden lg:mt-24">
         <Image
           data-parallax="5"
-          src="/images/beans-dark.jpg"
+          src={asset("/images/beans-dark.jpg")}
           width={1920}
           height={1280}
           alt="Россыпь обжаренных зёрен на тёмной поверхности, крупный план"

@@ -1,0 +1,7 @@
+:HL["/coffee-shop-website/_next/static/chunks/01yimiodusg7v.css","style"]
+:HL["/coffee-shop-website/_next/static/media/332b5efa87d847c2-s.p.2xw2fcjcsz98j.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/coffee-shop-website/_next/static/media/e0d4ce99e5a5209f-s.p.1jwcpm6w583_v.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/coffee-shop-website/_next/static/media/e49a390e2fb8cbca-s.p.0es13sq49e3ol.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/coffee-shop-website/_next/static/media/e93dad723b20f1c1-s.p.3psl0_mnhzy2y.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+1:[["children",{"s":"__PAGE__","h":128}]]
+0:{"b":"yyq4FTVtaXYEJFMdHqSZQ","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
